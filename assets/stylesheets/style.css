@@ -1,7 +1,25 @@
 h1 {
 	color: blue;
+	background-color: red;
 }
 
 .errors {
 	color: red;
+}
+#login {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.pushsomeright {
+	margin-right: 30px;
+}
+#logindetails {
+	/*background-color: grey;*/
+	margin: 200px;
+}
+#loginbackground {
+	background-image: url(https://static.pexels.com/photos/30376/pexels-photo-30376.jpg);
+	background-size: cover;
+	height: auto;
+	width: auto;
 }
