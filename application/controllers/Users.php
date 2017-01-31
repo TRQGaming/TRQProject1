@@ -17,6 +17,7 @@ class Users extends CI_Controller {
 		$user_name = $this->input->post('user_name');
 		$email = $this->input->post('email');
 		$password = md5($this->input->post('password'));
+		$password_conf = md5($this->input->post('password'));
 
 		$this->load->library("form_validation");
 		$this->form_validation->set_rules("first_name", "last_name", "user_name", "trim|required");
@@ -36,7 +37,31 @@ class Users extends CI_Controller {
 		}
 	}
 
-
+	public function login()
+	{
+				$user_name = $this->input->post('user_name');
+				$password = md5($this->input->post('password'));
+		//Change up the password encryption
+				$this->load->model('login_verify');
+				$userDB = $this->login_verify->get($user_nameDB && $passswordDB);
+				if($user_name && $password == $user_nameDB && $passwordDB)
+				{
+						$user_info = array(
+							 'user_id' => $user_info['id'],
+							 'user_email' => $user_info['email'],
+							 'user_first' => $user_info['first_name'],
+				 		 	 'user_last' => $user_info['last_name'],
+							 'is_logged_in' => true
+						);
+						$this->session->set_userdata($user_info);
+						$this->load->view('welcome');
+				}
+				else
+				{
+						$this->session->set_flashdata("login_error", "Invalid email or password!");
+						$this->load->view('main');
+				}
+	}
 
 
 
