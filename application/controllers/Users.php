@@ -43,7 +43,7 @@ class Users extends CI_Controller {
 				$password = md5($this->input->post('password'));
 		//Change up the password encryption
 				$this->load->model('login_verify');
-				$emailDB = $this->login_verify->get($emailDB && $passswordDB);
+				$emailDB && $passswordDB = $this->login_verify->get($emailDB && $passswordDB);
 				if($email && $password == $emailDB && $passwordDB)
 				{
 						// $user_info = array(
