@@ -5,9 +5,14 @@ class Users extends CI_Controller {
 
 	public function index()
 	{
+<<<<<<< HEAD
+<<<<<<< HEAD
 		$this->output->enable_profiler();
 
 		$this->load->view('index');
+=======
+		$this->load->view('orders');
+>>>>>>> master
 	}
 
 	// public function user_register()
@@ -61,6 +66,9 @@ class Users extends CI_Controller {
 						$this->session->set_flashdata("login_error", "Invalid email or password!");
 						$this->load->view('main');
 				}
+=======
+		$this->load->view('orders');
+>>>>>>> master
 	}
 
 
