@@ -1,2 +1,0 @@
-# TRQProject1
-LampGroupProject
