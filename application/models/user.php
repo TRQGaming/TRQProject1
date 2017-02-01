@@ -1,7 +1,7 @@
 <?php
 class user extends CI_Model { //class must be the samw name as the file.
 
-    function user_register($register)
+    function user_login($user_login)
      {
          $query = "INSERT INTO users (first_name, last_name, user_name, email, password) VALUES (?, ?, ?, ?,?)";
          $values = array($this->input->post('first_name'), $this->input->post('last_name'),$this->input->post('user_name'), $this->input->post('email'), md5($this->input->post('password')));
@@ -20,6 +20,7 @@ class user extends CI_Model { //class must be the samw name as the file.
         $values = array($this->input->post('comments'));
         return $this->db->query($query,$values);
      }
+     
     
 }
 
