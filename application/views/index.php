@@ -3,7 +3,8 @@
 <head>
 	<title>All Users</title>
 	<link rel="stylesheet" href="/assets/stylesheets/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
 <body>
 	<div class="container back" id="loginbackground">
 		<div class="col-sm-2 col-lg-4 col-md-2">

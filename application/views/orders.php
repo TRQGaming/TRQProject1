@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Order Page</title>
         <link rel="stylesheet" href="/assets/stylesheets/style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
     <body>
         <div class="container dashboard">
