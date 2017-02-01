@@ -5,14 +5,12 @@ class Users extends CI_Controller {
 
 	public function index()
 	{
-<<<<<<< HEAD
-<<<<<<< HEAD
+// <<<<<<< HEAD
 		$this->output->enable_profiler();
 
 		$this->load->view('index');
-=======
-		$this->load->view('orders');
->>>>>>> master
+// =======
+// >>>>>>> master
 	}
 
 	// public function user_register()
@@ -42,8 +40,10 @@ class Users extends CI_Controller {
 	// 	}
 	// }
 
-	public function login()
+	public function user_login()
 	{
+							header('Location: views/orders');
+								die();
 				$email = $this->input->post('email');
 				$password = md5($this->input->post('password'));
 		//Change up the password encryption
@@ -59,19 +59,30 @@ class Users extends CI_Controller {
 						// 	 'is_logged_in' => true
 						// );
 						$this->session->set_userdata($user_info);
-						$this->load->view('welcome');
+						$this->load->view('order');
+						// 'this loads the view page order'
 				}
 				else
 				{
 						$this->session->set_flashdata("login_error", "Invalid email or password!");
-						$this->load->view('main');
+						$this->load->view('order');
 				}
-=======
-		$this->load->view('orders');
->>>>>>> master
 	}
 
 
+public function cart()
+			{
+						$this->load->view('order');
+						$user_order = $this->input->post();
+						$user_order = $db_handle->runQuery("SELECT * FROM product ORDER BY id ASC");
+						if (!empty($product_array))
+							{
+									foreach($user_order as $key=>$value)
+											{
+													return $user_order;
+											}
+							}
+			}
 
 
 

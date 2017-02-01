@@ -11,7 +11,7 @@
 		<div class="jumbotron col-sm-4 col-lg-2 col-md-4" id="logindetails" >
 			<h2 id="login">Game  <span class="glyphicon glyphicon-cloud" ></span></h2>
 			<div class="middle">
-			<form class="col-sm-12 col-lg-12 col-md-12" id="login" action="users/user_login" method="post">
+			<form class="col-sm-12 col-lg-12 col-md-12" id="login" action="Users/user_login" method="post">
 				<span class="col-sm-12 col-lg-12 col-md-12"><input type="email" name="email" placeholder="Email" ></span>
 				<span class="col-sm-12 col-lg-12 col-md-12"><input type="text" name="password" placeholder="password" ></span>
 				<span class="col-sm-12 col-lg-12 col-md-12"><input class="btn btn-warning" id="down" type="submit" name="submit" value="Login"></span>
